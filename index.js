@@ -20,3 +20,20 @@ console.log(moduleCashing.getName())
 const newSuperHero = require('./moduleCashing.js')
 
 console.log(newSuperHero.getName())
+
+// Export and import how to do execution here
+
+const importExport = require('./importExport.js')
+
+// destructuring method
+
+const {add, subtract} = require('./importExport.js')
+
+console.log(add(2,4))
+
+// if we want to execute more than 2 functions from a module
+console.log(importExport.add(3,4))
+console.log(importExport.subtract(3,4))
+
+console.log(add(2,4))
+console.log(subtract(9,7))
